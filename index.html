@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="viewport" content="with-device-width, initial-scale=1.0">
+    <title>Evan Leong - Portfolio Website</title>
+
+   
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a59bbf716.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <img src="images/logo.png" class=" unselectable logoN" draggable="false">
+            <div class = "nav-links" id="navLinks">
+                <i class="fa fa-times"  onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#aboutme" draggable="false">About</a></li>  
+                    <li><a href="#experience" draggable="false">Experience</a></li>
+                    <li><a href="#projects" draggable="false">Projects</a></li>
+                    <li><a href="#contactpg" draggable="false">Contact</a></li>  
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <button onclick="topFunction()" id="topBtn" title="Go to top">Home</button>
+        </nav>
+
+    <div  class="text-box">
+        <h1>Evan Leong</h1>
+        <p>Computer science student with over 3 years of programming experience in multiple languages alongside experience teaching younger audiences coding and problem solving skills.</p>
+        <div class="iconsH">
+            <a href="https://www.linkedin.com/in/evan-leong-62225b249/" target = "blank" draggable="false"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/EvLeong1" target = "blank" draggable="false"><i class="fa fa-github"></i></a>
+            
+        </div>
+        <br>
+        <hr> 
+    </div> 
+
+    
+    </section>
+
+     
+
+    <!----About Me---->
+    
+    <section class="aboutB">
+        <div class="bHead">
+            <h2 class = "about" id = "aboutme">About Me</h1>
+            
+            <div class="row">
+                <div class="bBlock">
+                    <h3>Relevant Skills</h3>
+                    <p>C++<br>Python<br>JavaScript<br>HTML/CSS<br>MongoDB<br>Heroku Cloud Hosting</p>
+                </div>
+                <div class="bBlock">
+                    <h3>Education</h3>
+                    <p>Computer Science, B.S. <br> UC Irvine - Expected June 2024<br><br>Computer Science, A.S.<br> Diablo Valley College - May 2022</p>
+                </div>
+                <div class="bBlock">
+                    <h3>Goals</h3>
+                    <p>I am aiming at becoming a professional software developer after college. I'm looking for new opportunities to learn and become part of the tech industry. I have found that the most rewarding part of programming is watching people have fun with the projects that I create!  </p>
+                </div>
+
+                
+                
+            </div>
+        
+            <div class="row">
+                <div class="bBlock">
+                    <h3>Ace</h3>
+                    
+                </div>
+                <div class="bBlock">
+                    <h3>Gracie</h3>
+                    
+                </div>
+                <div class="bBlock">
+                    <h3>Rigs</h3>
+                    
+                </div>
+        </div>
+
+            
+
+        </div>
+    </section>
+    
+    <hr> 
+
+    <!----Experience---->
+    <section class="expB">
+        <div class="exp">
+            <h2 class = "exp" id = "experience">Experience</h1>
+                <p>Hover over an image for more details.</p>
+            
+            <div class="row">
+                <div class="exp-col">
+                    <img src="images/brickspace.jpg">
+                    <div class="layer">
+                        <h3>BrickSpace<br>Jan 2021 - Aug 2022<br><br><ul>Soft Skills Learned</ul><br>Leadership<br>Responsibility<br>Adaptability</h3>
+                    </div>
+                </div>
+                <div class="hidden">
+                    <h3>BrickSpace<br></h3>
+                    <p>While working at BrickSpace I taught basic and intermediate computer science concepts utilizing Scratch and Python. I worked with
+                        hundreds of elementary, middle school, and high school students in the Benicia Unified School District. I am really proud that I got to work with the Special Education program over the summer, 
+                        helping develop their problem solving skills.
+                    </p>
+                </div>
+                
+                
+                
+            </div>
+            <div class="row">
+                <div class="exp-col">
+                    <img src="images/21st.jpg">
+                    <div class="layer">
+                        <h3>21st Century Sounds<br>Jun 2021 - Aug 2021<br><br><ul>Soft Skills Learned</ul><br>Cooperation<br>Teamwork<br>Time Management</h3>
+                    </div>
+                </div>
+                <div class="hidden">
+                    <h3>21st Century Sounds</h3>
+                    <p>When I was an intern at 21st Century Sounds I learned alot about interacting and getting along with many different types of people. One of my responsibilities included the on site set up of equipment
+                        such as monitors, laptops, and other large electronics. I also worked alongside clients to create audio and video projects for weddings and memorial services. 
+                    </p>
+                </div>
+                
+                
+                
+
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    
+
+    <!----Projects---->
+    <section class = "oproj" >
+        <div class="projects" id ="projects">
+            <h1>Projects</h1>
+            <div class="row">
+
+                <div class="proj">
+                    <h3>ACraffle</h3>    
+                    <img src="images/acraffle.png" draggable="false" ">
+                                   
+                        <p>ACraffle is an interactive discord bot usde in over 1500 servers and has over 3000 users. It connects to MongoDB in order to store user data across servers and
+                            is hosted using Heroku Cloud Hosting. It has features that allow users to create a profile and also has globally synced events such as a shop that rests daily.
+                        </p>
+                    <a href="https://dblstatistics.com/bot/864733251166797835" target = "blank" draggable="false"><i class="fa-solid fa-chart-line"></i></a>
+                    <a href="https://www.youtube.com/watch?v=hTzOGHAkqMg&ab_channel=ACraffle" target = "blank"  draggable="false"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://discord.com/oauth2/authorize?client_id=864733251166797835&permissions=286784&scope=bot" target = "blank" draggable="false"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://github.com/EvLeong1/acraffle" target = "blank" draggable="false"><i class="fa fa-github"></i></a>
+                </div>
+
+                <div class="proj">
+                    <h3>Learning in Unity</h3>
+                    <img src="images/game.png" draggable="false" ">
+                    
+                        <p>In my free time I like to play around and tinker with Unity designing small games and learning how to use the platform. For instance, in the game pictured above
+                            I learned how to add particle effects, more dyanmic sounds and music, and the basics of multiplayer. One player places the red squares and one player has to shoot them. </p>
+                </div>
+
+                <div class="proj">
+                    <h3>Scratch Curriculum</h3>
+                    <img src="images/scratch.png" draggable="false" ">
+                    
+                    
+                        <p>I created many different, very basic Scratch games. They are easy to understand making them perfcet for beginning students at the elementary school level! Each one tries to show off a different genres since my goal when
+                            designing these games for students was to make sure they got excited about the projects. 
+                        </p>
+                    
+                    <a href="https://scratch.mit.edu/users/evleong1/" target = "blank"  draggable="false"><i class="fa-solid fa-cat"></i></a>
+                    
+                
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+   <br>
+   <br>
+   <br>
+    <hr>
+
+
+    <!-----Contact------>
+    <section class="contactB">
+        <div class="contact" id="contactpg">
+            <h1>Contact</h1>
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Irvine, CA<br>Bay Area, CA</h5>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>(925)  786 - 1853</h5>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <span>
+                            <h5>evleong1@gmail.com</h5>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="contact-form">
+                    <form method="post" action="https://forms.un-static.com/forms/index.html">
+                        <div class="form-group row">
+                        <div class="col-8">
+                            <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <input id="name" name="name" placeholder="Your name" type="text" required="required" class="form-control">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                        <div class="col-8">
+                            <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <input id="email" name="email" placeholder="Your e-mail" type="text" required="required" class="form-control">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-8">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                <i class="fa-solid fa-message"></i>
+                                </div>
+                                <textarea id="message" name="message" cols="40" rows="10" required="required" class="form-control" style="resize:none" placeholder="Your message"></textarea>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                        <div class="offset-4 col-8">
+                            <button name="submit" type="submit" class="send-btn">Send</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+<!----Footer----->
+<section class = "footer" >
+    
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/evan-leong-62225b249/" target = "blank" draggable="false"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/EvLeong1" target = "blank" draggable="false"><i class="fa fa-github"></i></a>
+        
+    </div>
+    <p>Made by me<br>Hosted with GitHub Pages</i></p>
+
+</section>
+
+
+
+
+    <!----JS For Toggle Menu---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    
+
+
+    <!---JS for top buttom--->
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("topBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+    
+</body>
+</html>
+
+
+
+
+
