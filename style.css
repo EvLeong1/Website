@@ -4,6 +4,12 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
+
 hr{
     border: 8px double maroon;
     border-radius: 5px;
@@ -185,7 +191,11 @@ nav .fa{
 @media(max-width:700px) {
     
     .text-box h1{
-        font-size: 40px;
+        
+        font-size: 15vw;
+        transition: transform 0.5s;
+        color: rgba(175, 0, 0, 0.9);
+        text-shadow: 2px 2px black;
     }
     .text-box p{
         font-size: 20px;
@@ -193,10 +203,11 @@ nav .fa{
     .nav-links ul li{
         display: block;
         
+        
 
     }
     .nav-links{
-        position:absolute;
+        position:fixed;
         background: lightgray;
         height: 100vh;
         width: 200px;
@@ -235,6 +246,7 @@ nav .fa{
     
     .nav-links ul{
         padding: 10px;
+        
     }
     
     .nav-links ul li a{
@@ -345,6 +357,11 @@ h3{
     font-size: 70px;
     color:black;
 }
+@media(max-width: 700px){
+    .exp h2{
+        font-size: 10vw;
+    }
+}
 .exp p{
     color: black;
 }
@@ -433,12 +450,12 @@ h3{
 @media(max-width: 700px){
     .hidden h3{
         font-size: 50%;
-        
     }
+
     .hidden p{
         font-size: 30%;
-        
     }
+
     .hidden{
         display: block;
         flex-basis: 50%;
@@ -451,6 +468,7 @@ h3{
         
         align-self: center;
     }
+
     .layer h3{
         width: 100%;
         font-weight: 600;
@@ -486,6 +504,11 @@ h3{
     font-size: 70px;
 }
 
+@media(max-width: 700px){
+    .projects h1{
+        font-size: 10vw;
+    }
+}
 
 .proj{
     flex-basis: 31%;
@@ -522,6 +545,7 @@ h3{
     
 
 }
+
 
 .proj h3{
     margin-top: 16px;
