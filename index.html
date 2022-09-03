@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name ="viewport" content="with-device-width, initial-scale=1">
     
@@ -31,16 +32,16 @@
             <button onclick="topFunction()" id="topBtn" title="Go to top">Home</button>
         </nav>
 
-    <div  class="text-box">
-        <h1>Evan Leong</h1>
-        <p>Computer science student with over 3 years of programming experience in multiple languages alongside experience teaching younger audiences coding and problem solving skills.</p>
-        <div class="iconsH">
-            <a href="https://www.linkedin.com/in/evan-leong-62225b249/" target = "blank" draggable="false"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/EvLeong1" target = "blank" draggable="false"><i class="fa fa-github"></i></a>
-            
-        </div>
-        <br>
-        <hr> 
+        <div  class="text-box">
+            <h1>Evan Leong</h1>
+            <p>Computer science student with over 3 years of programming experience in multiple languages alongside experience teaching younger audiences coding and problem solving skills.</p>
+            <div class="iconsH">
+                <a href="https://www.linkedin.com/in/evan-leong-62225b249/" target = "blank" draggable="false"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/EvLeong1" target = "blank" draggable="false"><i class="fa fa-github"></i></a>
+                
+            </div>
+            <br>
+            <hr> 
     </div> 
 
     
@@ -294,10 +295,8 @@
 
     </section>
 
-   <br>
-   <br>
-   <br>
-    <hr>
+   
+    <hr style="margin-top: 10%;">
 
 
     <!-----Contact------>
@@ -389,73 +388,74 @@
 
 
 
-    <!----JS For Toggle Menu---->
-    <script>
-        var navLinks = document.getElementById("navLinks");
+<!----JS For Toggle Menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
 
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
 
-    </script>
-
-    <!--Slideshow-->
-    <script>
-        let slideIndex = [1,1,1];
-        /* Class the members of each slideshow group with different CSS classes */
-        let slideId = ["mySlides1", "mySlides2","mySlides3"]
-        showSlides(1, 0);
-        showSlides(1, 1);
-        showSlides(1, 2);
-
-        function plusSlides(n, no) {
-        showSlides(slideIndex[no] += n, no);
-        }
-
-     
-
-        
-
-        function showSlides(n, no) {
-        let i;
-        let x = document.getElementsByClassName(slideId[no]);
-        if (n > x.length) {slideIndex[no] = 1}
-        if (n < 1) {slideIndex[no] = x.length}
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex[no]-1].style.display = "block";
-        }
+</script>
 
 
-    </script>
+<!--Slideshow-->
+<script>
+    let slideIndex = [1,1,1];
+    /* Class the members of each slideshow group with different CSS classes */
+    let slideId = ["mySlides1", "mySlides2","mySlides3"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+
+    function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+    }
+
+    
+
+    
+
+    function showSlides(n, no) {
+    let i;
+    let x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex[no]-1].style.display = "block";
+    }
 
 
-    <!---JS for top buttom--->
-    <script>
-        //Get the button:
-        mybutton = document.getElementById("topBtn");
+</script>
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
 
-        function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-        }
+<!---JS for top buttom--->
+<script>
+    //Get the button:
+    mybutton = document.getElementById("topBtn");
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-    </script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
 
     
 </body>
