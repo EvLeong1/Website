@@ -745,15 +745,27 @@ h3{
     outline: none;
     border: 1px solid #ccc;
     
-    
-
 }
+
+
 .fa-messages{
     color:black;
     font-size: 1em;
 }
 
+.pfp{
+    width:15%;
+    height:auto;
+    border-radius: 100px;
+}
 
+@media(max-width: 700px){
+    .pfp{
+        width:30%;
+        height:auto;
+        border-radius: 100px;
+    }
+}
 
 .send-btn{
     display: inline-block;
