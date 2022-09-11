@@ -567,6 +567,7 @@ h3{
     object-position:  top left;
     object-fit: cover;
     transition: 0.2s;
+    border: 3px black solid;
     
 }
 .proj img:hover{
@@ -601,7 +602,6 @@ h3{
 }
 
 
-
 .fa-brands {
     margin-top: 20px;
     color:black;
@@ -623,6 +623,10 @@ h3{
     color: darkblue;
     transition: 0.2s;
 }
+.fa-gamepad:hover{
+    color: darkblue;
+    transition: 0.2s;
+}
 .fa-cat:hover{
     color: rgb(190, 124, 0);
     transition: 0.2s;
@@ -632,6 +636,12 @@ h3{
 }
 .fa-solid:active{
     transform: scale(0.9);
+}
+
+.fa-gamepad{
+    margin-top: 20px;
+    color:black;
+    font-size: 3em;
 }
 
 
