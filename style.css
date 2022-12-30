@@ -392,6 +392,15 @@ h3{
     box-sizing: border-box;
     transition: 0.5s;
 }
+.projBlock{
+    flex-basis: 31%;
+    background: rgba(128, 0, 0, 0.74);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
 
 
 .bSpaceBlock:hover{
@@ -554,6 +563,7 @@ h3{
 }
 
 
+
 /*projects*/
 .projects{
     width: 80%;
@@ -585,15 +595,21 @@ h3{
 }
 
 .proj img{
-    width: 100%;
+    /* width: 50%; */
     border-radius: 10px;
     height: 70%;
     object-position:  top;
     object-fit:cover;
     transition: 0.2s;
     border: 3px black solid;
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;    
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 .proj img:hover{
     box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.8);
     transition: 0.2s;
@@ -608,8 +624,19 @@ h3{
     padding:10px;
     border-radius: 20px;
     color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
     
 
+}
+
+.projButtons{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
 }
 
 
@@ -622,9 +649,19 @@ h3{
     padding: 20px;
     border-radius: 60px;
     color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
 
 }
 
+/* .proj a{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; 
+} */
 
 .fa-brands {
     margin-top: 20px;
@@ -633,6 +670,7 @@ h3{
     display:inline-block;
     text-align: center;
     vertical-align: bottom;
+    
 
 }
 .fa-chart-line:hover{
@@ -666,6 +704,7 @@ h3{
     margin-top: 20px;
     color:black;
     font-size: 3em;
+    
 }
 
 
