@@ -59,6 +59,8 @@
                 <div class="bBlock">
                     <h3>Relevant Skills</h3>
                     <p>C++<br>Python<br>JavaScript<br>HTML/CSS<br>MongoDB<br>Heroku Cloud Hosting</p>
+                    <h3>Relevant Coursework</h3>
+                    <p>Data Structures<br>Algorithms<br>Database Management
                 </div>
                 <div class="bBlock">
                     <h3>Education</h3>
@@ -200,6 +202,7 @@
                     </div> -->
                     
                 </div>
+                
         </div>
 
             
@@ -216,17 +219,46 @@
                 <p>Hover over an image for more details.</p>
             
             <div class="row">
-                <div class="exp-col">
+                <!-- <div class="exp-col">
                     <img src="images/brickspace.jpg">
                     <div class="layer">
                         <h3>BrickSpace<br>Jan 2021 - Aug 2022<br><br><ul>Soft Skills Learned</ul><br>Leadership<br>Responsibility<br>Adaptability</h3>
                     </div>
+                </div> -->
+                <div class="bSpaceBlock">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides4 fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/bspace1.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides4 fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/bspace2.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides4 fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/bspace3.jpg" style="width:100%">
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prevBspace" onclick="plusSlides(-1,3)">&#10094;</a>
+                        <a class="nextBspace" onclick="plusSlides(1,3)">&#10095;</a>
+                        
+                    </div> 
+                    
                 </div>
                 <div class="hidden">
                     <h3>BrickSpace<br></h3>
-                    <p>At BrickSpace, I taught basic and intermediate computer science concepts utilizing Scratch and Python to hundreds of elementary, middle, and high school students. 
-                        I also developed leadership skills by instructing a team to launch several weekly video game design programs for students in which they worked in groups on week-long projects which focused on creating a playable game. 
-                        All while working with credentialed teachers directly to develop curriculum that focused on computer science and problem solving skills.
+                    <p align="left">● Taught basic and intermediate computer science concepts through Scratch and Python to hundreds of elementary, middle,
+                        and high school students<br><br>
+                        ● Developed leadership skills by instructing a team to launch several weekly video game design programs for students in
+                        which they worked in groups to create a playable game<br><br>
+                        ● Worked with credentialed teachers directly to develop curriculum that focused on introducing computer science and
+                        problem solving skills
                     </p>
                 </div>
                 
@@ -242,8 +274,9 @@
                 </div>
                 <div class="hidden">
                     <h3>21st Century Sounds</h3>
-                    <p>While at 21st Century Sounds I performed requirements analysis to learn abouts client needs in order to develop audio and video projects for weddings and memorial services. 
-                        I also developed a client database to allow for efficient gathering of client information.
+                    <p align="left">● Performed requirements analysis to learn about client needs in order to develop audio and video projects for weddings
+                        and memorial services<br><br>
+                        ● Developed a client database to allow for efficient storing and recall of client information
                     </p>
                 </div>
                 
@@ -265,14 +298,14 @@
 
                 <div class="proj">
                     <h3>ACraffle</h3>    
-                    <img src="images/acraffle.png" draggable="false" ">
+                    <img src="images/acraffleDBL.png" draggable="false" ">
                                    
                         <p>ACraffle is an interactive discord bot used in over 1500 servers and has over 3000 users. It connects to MongoDB in order to store and access user data across servers and
                             is hosted using Heroku Cloud Hosting. It has features that allow users to create a profile and also has globally synced events such as a shop that resets daily. 
                         </p>
                     <a href="https://dblstatistics.com/bot/864733251166797835" target = "blank" draggable="false"><i class="fa-solid fa-chart-line"></i></a>
                     <a href="https://www.youtube.com/watch?v=hTzOGHAkqMg&ab_channel=ACraffle" target = "blank"  draggable="false"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://discord.com/oauth2/authorize?client_id=864733251166797835&permissions=286784&scope=bot" target = "blank" draggable="false"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://discord.com/api/oauth2/authorize?client_id=864733251166797835&permissions=2147772416&scope=bot%20applications.commands" target = "blank" draggable="false"><i class="fa-brands fa-discord"></i></a>
                     <a href="https://github.com/EvLeong1/acraffle" target = "blank" draggable="false"><i class="fa fa-github"></i></a>
                 </div>
 
@@ -420,12 +453,13 @@
 
 <!--Slideshow-->
 <script>
-    let slideIndex = [1,1,1];
+    let slideIndex = [1,1,1,1];
     /* Class the members of each slideshow group with different CSS classes */
-    let slideId = ["mySlides1", "mySlides2","mySlides3"]
+    let slideId = ["mySlides1", "mySlides2","mySlides3","mySlides4"]
     showSlides(1, 0);
     showSlides(1, 1);
     showSlides(1, 2);
+    showSlides(1, 3);
 
     function plusSlides(n, no) {
     showSlides(slideIndex[no] += n, no);
