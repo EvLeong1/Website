@@ -34,14 +34,15 @@
 
 
 
-hr{
+/* hr{
     border: 8px double maroon;
     border-radius: 5px;
     width: 60%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: auto;
-    
-}
+    margin-bottom: 200px;
+} */
 
 html {
     scroll-behavior: smooth;
@@ -50,13 +51,17 @@ html {
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(white,antiquewhite);
-    /*background-color: linear gra antiquewhite;*/
+    /* background-image: linear-gradient(white,antiquewhite); */
+    /* background-color: lightslategray; */
+    background-color: rgb(34, 22, 49);
+    
+    /* background-color: gray; */
     background-position: center;
     background-size: cover;
     position: relative;
     
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -70,17 +75,19 @@ html {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: lightgray; /* Set a background color */
-    color: black; /* Text color */
+    background-color: rgba(45, 133, 235, 0.9); /* Set a background color */
+    color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
+    border: 1px solid white;
+    
   }
   
-  #topBtn:hover {
-    background-color: gray; /* Add a dark-grey background on hover */
-  }
+#topBtn:hover {
+background-color: rgba(25, 78, 139, 0.9); /* Add a dark-grey background on hover */
+}
 
 nav{
     display: flex;
@@ -130,6 +137,7 @@ nav img{
     
     
     
+    
 }
 .nav-links ul li{
     list-style: none;
@@ -137,8 +145,9 @@ nav img{
     padding: 8px 12px;
     position: relative;
     font-weight: 800;
-    background-color: rgba(128, 0, 0, 0.8);
+    background-color: rgba(45, 133, 235, 0.9);
     border-radius: 15px;
+    margin-bottom: 20px;
 }
 .nav-links ul li a{
     color:white;
@@ -165,23 +174,22 @@ nav img{
 
 .text-box{
     width: 60%;
-    color:black;
+    color:white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
     
-    
 }
 .text-box h1{
     margin-top: 100px;
     font-size: 150px;
     transition: transform 0.5s;
-    color: rgba(175, 0, 0, 0.9);
-    text-shadow: 2px 2px black;
+    color: rgba(45, 133, 235, 0.9);
+    text-shadow: 2px 2px white;
     animation: 1s ease-out 0s 1 growBig;
-    
+    -webkit-text-stroke: 1px white;
     
 }
 
@@ -194,7 +202,7 @@ nav img{
 .text-box p{
     margin: 20px 0px 60px;
     font-size: 25px;
-    color:black;
+    color:white;
     line-height: 200%;
     text-align: center;
 }
@@ -202,8 +210,8 @@ nav img{
 .hero-btn{
     display: inline-block;
     text-decoration: none;
-    color:black;
-    border: 1px solid black;
+    color:white;
+    border: 1px solid white;
     padding: 12px 34px;
     font-size: 13px;
     font-weight: 800;
@@ -215,7 +223,7 @@ nav img{
 
 
 .hero-btn:hover{
-    border: 1px solid black;
+    border: 1px solid white;
     background:lightgray;
     transition: 1s;
     
@@ -224,7 +232,15 @@ nav img{
 nav .fa{
     display: none;
 }
-
+@media(max-width:1400px) {
+    .text-box h1{
+        margin-top: 500px;
+        font-size: 15vw;
+        transition: transform 0.5s;
+        color: rgba(45, 133, 235, 0.9);
+        text-shadow: 2px 2px white;
+    }
+}
 
 @media(max-width:700px) {
     
@@ -232,8 +248,8 @@ nav .fa{
         margin-top: 100px;
         font-size: 15vw;
         transition: transform 0.5s;
-        color: rgba(175, 0, 0, 0.9);
-        text-shadow: 2px 2px black;
+        color: rgba(45, 133, 235, 0.9);
+        text-shadow: 2px 2px white;
     }
     .text-box p{
         font-size: 20px;
@@ -260,7 +276,7 @@ nav .fa{
 
     nav .fa{
         display: block;
-        color: black;
+        color: white;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -274,12 +290,12 @@ nav .fa{
     }
 
     nav .fa-times{
-        color:black;
+        color:white;
         pointer-events: all;
         
     }
     nav .fa-times:hover{
-        color:maroon;
+        color:aqua;
         
     }
     
@@ -309,13 +325,30 @@ nav .fa{
     
 }
 .aboutB{
-    background-image: linear-gradient(#faebd7,white);
+    /* background-image: linear-gradient(gray,lightgray); */
+    background-color: rgba(29,32,58,255);
     width: 100%;
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%235498d1' fill-opacity='0.4'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+}
+@media(max-width:1400px) {
+    .about{
+        font-size: 60px;
+        color: white;
+        text-decoration: solid;
+        text-decoration-line: underline;
+        text-underline-offset: 20px;
+        margin-top: 200px;
+       
+    }
 }
 
 .about{
     font-size: 60px;
-    color: black;
+    color: white;
+    text-decoration: solid;
+    text-decoration-line: underline;
+    text-underline-offset: 20px;
+    /* margin-top: 200px; */
    
 }
 .about::before {  
@@ -363,15 +396,61 @@ p{
     justify-content: space-between;
 }
 
+
+.column2 {
+    /* float: left; */
+    /* width:10%; */
+    padding: 5px;
+    flex: 45%;
+    width: 100%;
+    height: auto;
+   
+}
+  
+/* Clear floats after image containers */
+.row2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row2 {
+    display: flex;
+}
+
+
+.acr h4{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 100px;
+    font-size: 20px;
+    /* background: rgba(45, 133, 235, 0.9); */
+    padding: 20px;
+    border-radius: 60px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+}
+
+.acr{
+    flex-basis: 30%;
+}
+
+
 .bBlock{
-    flex-basis: 31%;
-    background: rgba(128, 0, 0, 0.74);
+    flex-basis: 30%;
+    background: rgba(45, 133, 235, 0.9);
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
+    border-color: white;
+    border-style: solid;
 }
 h3{
     text-align: center;
@@ -380,42 +459,49 @@ h3{
 }
 
 .bBlock:hover{
-    box-shadow: 0 0 40px 0px rgba(175, 0, 0, 0.8);
+    box-shadow: 0 0 40px 0px white;
 }
 
 .bSpaceBlock{
     flex-basis: 31%;
-    background: rgba(128, 0, 0, 0.74);
+    background: rgba(45, 133, 235, 0.9);
+    border-color: white;
+    border-style: solid;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
+    border: 2px solid white;
 }
 .projBlock{
     flex-basis: 31%;
-    background: rgba(128, 0, 0, 0.74);
+    background: blue;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
+    border: 2px solid white;
 }
 
 
 .bSpaceBlock:hover{
-    box-shadow: 0 0 40px 0px rgba(175, 0, 0, 0.8);
+    box-shadow: 0 0 40px 0px white;
 }
 
 @media(max-width: 700px){
     .row{
         flex-direction: column;
     }
+    .row2{
+        flex-direction: column;
+    }
 }
 
 .bSpacePic{
     flex-basis: 31%;
-    background: rgba(128, 0, 0, 0.74);
+    background: blue;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -430,18 +516,32 @@ h3{
     text-align: center;
     padding-top: 50px;
     font-size: 70px;
-    color:black;
+    color:white;
+    
 }
+.exp h2{
+    text-decoration: solid;
+    text-decoration-line: underline;
+    text-underline-offset: 20px;
+    /* background-color: aqua; */
+    /* width: 1000%; */
+}
+
 @media(max-width: 700px){
     .exp h2{
         font-size: 10vw;
     }
 }
 .exp p{
-    color: black;
+    color: white;
+    
 }
 .expB{
-    background-image: linear-gradient(white,antiquewhite);
+    /* background-image: linear-gradient(white,antiquewhite);*/
+    background-color: rgba(29,32,58,255);
+    /* background: repeating-linear-gradient( -45deg, rgb(31, 3, 133) 0px, #000 5px, #333 6px, #333 11px, #000 12px); */
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%235498d1' fill-opacity='0.4'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+    
 }
 
 .exp-col{
@@ -459,6 +559,8 @@ h3{
     width: 100%;
     height: 100%;
     
+    
+
 }
 
 .layer{
@@ -474,7 +576,7 @@ h3{
     background: rgba(0, 0, 0, 0.5);
 }
 .exp-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.8);
+    box-shadow: 0 0 20px 0px white;
 }
 .layer h3{
     width: 100%;
@@ -496,13 +598,14 @@ h3{
 .hidden{
     display: block;
     flex-basis: 50%;
-    background: rgba(128, 0, 0, 0.74);
+    background: rgba(45, 133, 235, 0.9);
     border-radius: 10px;
     margin-bottom: 10%;
     padding: 10px 10px;
     box-sizing: border-box;
     transition: 0.5s;
     color: white;
+    border: 2px solid white;
     
     align-self: center;
 }
@@ -518,7 +621,7 @@ h3{
     font-weight: 300;
 }
 .hidden:hover{
-    box-shadow: 0 0 40px 0px rgba(175, 0, 0, 0.8);
+    box-shadow: 0 0 40px 0px white;
 }
 
 @media(max-width: 700px){
@@ -533,7 +636,7 @@ h3{
     .hidden{
         display: block;
         flex-basis: 50%;
-        background: rgba(128, 0, 0, 0.74);
+        background: rgba(45, 133, 235, 0.9);
         border-radius: 10px;
         margin-bottom: 30%;
         padding: 10px 10px;
@@ -570,18 +673,32 @@ h3{
     margin:auto;
     text-align: center;
     padding-top: 100px;
+    background-color: rgba(29,32,58,255);
+    
+   
     
 }
+
+
 .oproj{
-    background-image: linear-gradient(antiquewhite,white);
+    /* background-image: linear-gradient(antiquewhite,white); */
+    background-color: rgba(29,32,58,255);
+    
 }
 .projects h1{
     font-size: 70px;
+    color: white;
+    text-decoration: solid;
+    text-decoration-line: underline;
+    text-underline-offset: 20px;
 }
 
 @media(max-width: 700px){
     .projects h1{
         font-size: 10vw;
+        text-decoration: solid;
+        text-decoration-line: underline;
+        text-underline-offset: 20px;
     }
 }
 
@@ -597,21 +714,23 @@ h3{
 .proj img{
     /* width: 50%; */
     border-radius: 10px;
-    height: 70%;
-    object-position:  top;
+    height: 60%;
+    width: 50%;
+    object-position:  top ;
     object-fit:cover;
     transition: 0.2s;
-    border: 3px black solid;
+    border: 3px white solid;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;    
+      
     margin-top: 20px;
     margin-bottom: 20px;
+
 }
 
 .proj img:hover{
-    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 40px 0px white;
     transition: 0.2s;
 }
 
@@ -619,8 +738,8 @@ h3{
 .proj p{
     padding: 0;
     font-weight: 400;
-    color:black;
-    background: rgba(128, 0, 0, 0.74);
+    color:white;
+    background: rgba(45, 133, 235, 0.9);
     padding:10px;
     border-radius: 20px;
     color: white;
@@ -628,6 +747,7 @@ h3{
     margin-left: auto;
     margin-right: auto;
     width: 75%; 
+    border: 2px solid white;
     
 
 }
@@ -641,11 +761,11 @@ h3{
 
 
 .proj h3{
-    margin-top: 16px;
+    margin-top: 150px;
     margin-bottom: 15px;
     text-align: center;
     font-weight: 600;
-    background: rgba(128, 0, 0, 0.74);
+    background: rgba(45, 133, 235, 0.9);
     padding: 20px;
     border-radius: 60px;
     color: white;
@@ -653,6 +773,186 @@ h3{
     margin-left: auto;
     margin-right: auto;
     width: 75%; 
+    font-size: 50px;
+    border: 2px solid white;
+
+}
+
+.proj2{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    
+    
+}
+
+
+
+.proj2 img:hover{
+    box-shadow: 0 0 40px 0px white;
+    transition: 0.2s;
+}
+
+
+.proj2 p{
+    padding: 0;
+    font-weight: 400;
+    color:white;
+    background: rgba(45, 133, 235, 0.9);
+    padding:10px;
+    border-radius: 20px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+    margin-top: 50px;
+    border: 2px solid white;
+    
+
+}
+
+
+
+.proj2 img{
+    width: 50%;
+    border-radius: 10px;
+    height: 80%;
+    width: 100%;
+    object-position: 10% 10%;
+    object-fit:cover;
+    transition: 0.2s;
+    border: 3px white solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+      
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.proj2 h3{
+    margin-top: 150px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+    background: rgba(45, 133, 235, 0.9);
+    padding: 20px;
+    border-radius: 60px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+    font-size: 50px;
+    border: 2px solid white;
+
+}
+
+.acrpic h3{
+    margin-top: 150px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+    background: rgba(45, 133, 235, 0.9);
+    padding: 20px;
+    border-radius: 60px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+    font-size: 50px;
+    border: 2px solid white;
+
+}
+
+.acrpic img{
+    width: 50%;
+    border-radius: 10px;
+    height: 40%;
+    
+    object-position: 10% 10%;
+    object-fit:cover;
+    transition: 0.2s;
+    border: 3px white solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+      
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.miniProj{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    text-align: left;
+    
+    
+}
+
+
+.miniProj img{
+    /* width: 50%; */
+    border-radius: 10px;
+    height: 50%;
+    object-position:  left;
+    object-fit:cover;
+    transition: 0.2s;
+    border: 3px white solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.miniProj img:hover{
+    box-shadow: 0 0 40px 0px white;
+    transition: 0.2s;
+}
+
+
+.miniProj p{
+    padding: 0;
+    font-weight: 400;
+    color:white;
+    background: rgba(45, 133, 235, 0.9);
+    padding:10px;
+    border-radius: 20px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+    /* margin-bottom: 200px; */
+    border: 2px solid white;
+    border: 2px solid white;
+    
+
+}
+
+
+
+.miniProj h3{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+    background: rgba(45, 133, 235, 0.9);
+    padding: 20px;
+    border-radius: 60px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+    border: 2px solid white;
 
 }
 
@@ -663,9 +963,180 @@ h3{
     width: 100%; 
 } */
 
+@media(min-width:701px) and (max-width:1400px) {
+    .miniProj2{
+        flex-basis: 45%;
+        border-radius: 10px;
+        margin-bottom: 10%;
+        text-align: left;
+        margin-top: 150px;
+        
+    }
+    .proj2 p {
+        flex-basis: 31%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: left;
+        margin-top: 100px;
+        border: 2px solid white;
+        
+        
+    }
+}
+@media(max-width:700px) {
+    .miniProj2{
+        flex-basis: 45%;
+        border-radius: 10px;
+        margin-bottom: 10%;
+        text-align: left;
+        /* margin-top: 150px; */
+    }
+    .miniProj img{
+        margin: 0px;
+    }
+    .miniProj2 h3{
+        /* margin-top: 20px;
+        margin-bottom: 15px; */
+        text-align: center;
+        font-weight: 600;
+        background: rgba(45, 133, 235, 0.9);
+        padding: 20px;
+        border-radius: 60px;
+        color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%; 
+        font-size: 25px;
+        border: 2px solid white;
+    
+    }
+    .miniProj h3{
+        /* margin-top: 20px;
+        margin-bottom: 15px; */
+        text-align: center;
+        font-weight: 600;
+        background: rgba(45, 133, 235, 0.9);
+        padding: 20px;
+        border-radius: 60px;
+        color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%; 
+        font-size: 25px;
+        border: 2px solid white;
+    
+    }
+    
+    .miniProj p{
+        padding: 0;
+        font-weight: 400;
+        color:white;
+        background: rgba(45, 133, 235, 0.9);
+        padding:10px;
+        border-radius: 20px;
+        color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%; 
+        margin-top: 10px;
+        border: 2px solid white;
+        
+    
+    }
+    .acrpic img{
+        width: 100%;
+        height: 600px;
+        object-position: center;
+    }
+}
+
+.miniProj2{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    text-align: left;
+}
+
+.miniProj2 img{
+    /* width: 50%; */
+    border-radius: 10px;
+    height: 50%;
+    object-position:  10% 10%;
+    object-fit:cover;
+    transition: 0.2s;
+    border: 3px white solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.miniProj2 img:hover{
+    box-shadow: 0 0 40px 0px white;
+    transition: 0.2s;
+}
+
+
+.miniProj2 p{
+    padding: 0;
+    font-weight: 400;
+    color:white;
+    background: rgba(45, 133, 235, 0.9);
+    padding:10px;
+    border-radius: 20px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+    /* margin-bottom: 250px; */
+    border: 2px solid white;
+    
+
+}
+
+.miniProj2 h3{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+    background: rgba(45, 133, 235, 0.9);
+    padding: 20px;
+    border-radius: 60px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+    border: 2px solid white;
+
+}
+
+.miniProj2 h4{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+    /* background: rgba(45, 133, 235, 0.9); */
+    padding: 20px;
+    border-radius: 60px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+    
+
+}
+
 .fa-brands {
     margin-top: 20px;
-    color:black;
+    color:white;
     font-size: 3em;
     display:inline-block;
     text-align: center;
@@ -702,7 +1173,7 @@ h3{
 
 .fa-gamepad{
     margin-top: 20px;
-    color:black;
+    color:white;
     font-size: 3em;
     
 }
@@ -710,19 +1181,19 @@ h3{
 
 .fa-chart-line{
     margin-top: 20px;
-    color:black;
+    color:white;
     font-size: 3em;
     
 }
 .fa-cat{
     margin-top: 20px;
-    color:black;
+    color:white;
     font-size: 3em;
     
 }
 .fa-github{
     margin-top: 20px;
-    color:black;
+    color:white;
     font-size: 3em;
 }
 .fa-github:hover{
@@ -734,13 +1205,13 @@ h3{
 @media(max-width: 700px){
     .fa-cat{
         margin-top: 20px;
-        color:black;
+        color:white;
         font-size: 3em;
         
     }
     .fa-chart-line{
         margin-top: 20px;
-        color:black;
+        color:white;
         font-size: 3em;
         
     }
@@ -754,22 +1225,46 @@ h3{
 
 /*contact*/
 .contactB{
-    background-image: linear-gradient(white,antiquewhite);
+    /* background-image: linear-gradient(white,antiquewhite); */
+    background-color: rgba(29,32,58,255);
+    /* margin-top: auto; */
 }
 .contact{
     width: 70%;
     margin: auto;
     
+    
 }
 .contact h1{
     font-size: 70px;
     text-align: center;
-    margin-top: 250px;
+    
+    color: white;
+    text-decoration: solid;
+    text-decoration-line: underline;
+    text-underline-offset: 20px;
+    margin-bottom: 50px;
+    
+}
+@media(max-width:1400px) {
+    .contact h1{
+        font-size: 70px;
+        text-align: center;
+        
+        color: white;
+        text-decoration: solid;
+        text-decoration-line: underline;
+        text-underline-offset: 20px;
+        margin-bottom: 50px;
+        margin-top: 150px;
+        
+    }
 }
 
 .contact-col{
     flex-basis: 48%;
     margin-bottom: 30px;
+    color: white;
 }
 
 .contact-col div{
@@ -785,7 +1280,7 @@ h3{
     font-size: 28px;
     margin: 10px;
     margin-right: 30px;
-    color: maroon;
+    color: white;
 }
 
 .contact-col div h5{
@@ -796,7 +1291,7 @@ h3{
 
 
 .contact-col div:hover{
-    color: maroon;
+    color: white;
     transform: scale(1.1);
     transform-origin: left;
     
@@ -820,9 +1315,17 @@ h3{
     
 }
 
-
+.fa-user{
+    color: white;
+}
+.fa-envelope{
+    color: white;
+}
+.fa-message{
+    color: white;
+}
 .fa-messages{
-    color:black;
+    color:white;
     font-size: 1em;
 }
 
@@ -843,8 +1346,8 @@ h3{
 .send-btn{
     display: inline-block;
     text-decoration: none;
-    color:maroon;
-    border: 1px solid maroon;
+    color:white;
+    border: 1px solid white;
     padding: 12px 34px;
     font-size: 13px;
     font-weight: 400;
@@ -869,15 +1372,16 @@ h3{
     width: 100%;
     text-align: center;
     padding:30px 0;
-    background-image: linear-gradient(antiquewhite,white);
+    /* background-image: linear-gradient(antiquewhite,white); */
+    background-color: rgba(29,32,58,255);
 
 }
 .footer p{
     font-weight: 300;
-    color:black;
+    color:white;
 }
 .icons .fa{
-    color: maroon;
+    color: white;
     margin: 0 13px;
     padding:18px 0;
     cursor: pointer;
@@ -888,7 +1392,7 @@ h3{
 }
 
 .iconsH .fa{
-    color: black;
+    color: white;
     margin: 0 13px;
     padding:18px 0;
     cursor: pointer;
@@ -896,7 +1400,7 @@ h3{
 }
 .iconsH .fa:hover{
     transform: scale(1.1);
-    color:maroon;
+    color:aqua;
 }
 
 /*SlideShow*/
@@ -1013,3 +1517,34 @@ h3{
   to {opacity: 1}
 }
 
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  /* The progress container (grey background) */
+  .progress-container {
+    position: fixed;
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: rgba(116, 177, 247, 0.9);
+    width: 0%;
+  }
+
+
+
+@keyframes AnimateBG { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}

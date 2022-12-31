@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+    
 <head>
     <meta name ="viewport" content="with-device-width, initial-scale=1">
     
@@ -15,24 +15,31 @@
     <script src="https://kit.fontawesome.com/3a59bbf716.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
-    <section class="header">
+
+<body >
+    
+    <section class="header" style="background-color: rgba(29,32,58,255);">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>  
         <nav>
             <img src="images/logo.png" class=" unselectable logoN" draggable="false">
+            <!-- <img src="images/pfp.jpg" class=" unselectable logoN" draggable="false"> -->
             <div class = "nav-links" id="navLinks">
                 <i class="fa fa-times"  onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#aboutme" draggable="false">About</a></li>  
                     <li><a href="#experience" draggable="false">Experience</a></li>
                     <li><a href="#projects" draggable="false">Projects</a></li>
-                    <li><a href="#contactpg" draggable="false">Contact</a></li>  
+                    <li><a href="#contactpg" draggable="false">Contact</a></li>
+                    <li><a href="https://drive.google.com/file/d/1RGrdtRYGUW_2jUmww7E5JVl0-QjA71mD/view?usp=sharing" target="_blank">Resume</a></li> 
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
             <button onclick="topFunction()" id="topBtn" title="Go to top">Home</button>
         </nav>
 
-        <div  class="text-box">
+        <div class="text-box">
             <h1>Evan Leong</h1>
             <p>Computer science student with over 3 years of programming experience in multiple languages alongside experience teaching younger audiences coding and problem solving skills.</p>
             <div class="iconsH">
@@ -41,18 +48,20 @@
                 
             </div>
             <br>
-            <hr> 
+             
     </div> 
-
+    
     
     </section>
 
      
-
+    
     <!----About Me---->
     
-    <section class="aboutB">
+    <section class="aboutB" >
         <div class="bHead">
+            <!-- <hr> -->
+            <!-- <hr style="margin-top: 10%;"> -->
             <h2 class = "about" id = "aboutme">About Me</h1>
             
             <div class="row">
@@ -210,13 +219,13 @@
         </div>
     </section>
     
-    <hr> 
+    <!-- <hr>  -->
 
     <!----Experience---->
     <section class="expB">
         <div class="exp">
             <h2 class = "exp" id = "experience">Experience</h2>
-                <p>Hover over an image for more details.</p>
+                <!-- <p>Hover over an image for more details.</p> -->
             
             <div class="row">
                 <!-- <div class="exp-col">
@@ -268,9 +277,9 @@
             <div class="row">
                 <div class="exp-col">
                     <img src="images/21st.jpg">
-                    <div class="layer">
+                    <!-- <div class="layer">
                         <h3>21st Century Sounds<br>Jun 2021 - Aug 2021<br><br><ul>Soft Skills Learned</ul><br>Cooperation<br>Teamwork<br>Time Management</h3>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="hidden">
                     <h3>21st Century Sounds</h3>
@@ -285,22 +294,59 @@
 
             </div>
         </div>
-        <hr>
+        <!-- <hr> -->
     </section>
 
     
 
     <!----Projects---->
-    <section class = "oproj" >
+    <section class = "oproj" style= "background-color: rgba(29,32,58,255);"" >
         <div class="projects" id ="projects">
             <h1>Projects</h1>
             <!-- <div class="row"> -->
 
-                <div class="proj">
-                    <h3>ACraffle</h3>    
-                    <img src="images/acraffleDBL.png" draggable="false">
-                    
+                <div class = "acrpic">
+                    <h3>ACraffle</h3> 
+                    <img src="images/acraffleDBL.png" draggable="false">  
+                </div> 
+                <div class="proj2">
+                    <!-- <div class="acrpic"> -->
+                    <!-- </div> -->
+                     
+                    <div class="row">
                         
+                        <!-- <div class="column2">
+                            <img src="images/acraffleDBL.png" draggable="false">
+                        </div>
+                        <div class="column2">
+                            <img src="images/acbank.png" draggable="false">
+                        </div>
+                        <div class="column2">
+                            <img src="images/acshop.gif" draggable="false">                    
+                        </div> -->
+                        
+                        <div class="acr">
+                            <h4>Raffle</h4>
+                            <img src="images/acraffle2.gif" draggable="false">
+                            
+                        
+                        </div>
+                        <div class="acr">
+                            <h4>Collection</h4>
+                            <img src="images/acbank.png" draggable="false">
+                            
+      
+                        </div>
+                        <div class="acr">
+                            <h4>Shop</h4>
+                            <img src="images/acshop.gif" draggable="false">                    
+    
+                        
+                        </div>
+                        
+                    </div>
+
+                    
                     
                     
                     <p>
@@ -336,7 +382,7 @@
                 
 
                 <div class="proj">
-                    <h3>Pokemon Clone</h3>
+                    <h3>Pokemon Style Browser Game</h3>
                     <img src="images/game.png" draggable="false">
                     
                     <p>
@@ -362,21 +408,111 @@
                     </div>
                     
                 </div>
-
                 <div class="proj">
-                    <h3>Scratch Curriculum</h3>
-                    <img src="images/scratch.png" draggable="false">
+                    <h3 >Data Structures</h3>
+                </div>
+                <div class="row">
                     
+                    <div class="miniProj">
+                        <h3>Word Ladder</h3>
+                        <img src="images/schoolProjects/WordLadder (Hashing).gif" draggable="false">
+                        
+                        <p> 
+                            <b> Language</b> <br> 
+                            - C++ <br> <br>
+                            <b> Data Structures Used</b> <br> 
+                            - Cuckoo Hash Table <br>
+                            - Priority Queue 
+                            <br><br>
+                            <b>About The Project</b><br>
+                            - Choosing a starting word, the program checks to see if there is a vaild path from that word to the destination word by only changing one letter per move<br>
+                            - I actually did this project twice, using <B>Cuckoo Hashing></B> the first time around and a <B>Priority Queue</B> the second, which allowed us to compare efficiency and see which method worked better<br>
+                            <br>
+                            <em>Note: Source Code for this project is not available to respect Academic Honesty Policies!</em>
+                        
+                        </p>
+                        
+                        <!-- <div class="projButtons">
+                            <a href="https://scratch.mit.edu/users/evleong1/" target = "blank"  draggable="false"><i class="fa-solid fa-cat"></i></a>
+                        </div> -->
+                        
                     
-                    <p>I created many different, very basic Scratch games. They are easy to understand making them perfect for beginning students at the elementary school level! Each one tries to show off a different genre since my goal when
-                        designing these games for students was to make sure they got excited about the projects. 
-                    </p>
+                    </div>
+                    <div class="miniProj">
+                        <h3>Graph Coloring - Register Allocation</h3>
+                        <img src="images/schoolProjects/GC.gif" draggable="false">
+                        
+                        <p>
+                            <b> Language</b> <br> 
+                            - C++ <br> <br>
+                            <b> Data Structures Used</b> <br> 
+                            - Adjacency List<br>
+                            <br>
+                            <b>About The Project</b><br>
+                            - This program uses Graph Coloring to as a way to represent Register Allocation and is broken up into 2 parts <br>
+                            - <B>Part 1:</B> Create the interference graph which I did by implementing an Adjacency List structure <br>
+                            - <B>Part 2:</B> Perform the Register Allocation (Graph Coloring), this was done using the Welsh-Powell Alogrithm
+                            <br><br>
+                            <em>Note: Source Code for this project is not available to respect Academic Honesty Policies!</em>
+                        </p>
+                        
+                        <!-- <div class="projButtons">
+                            <a href="https://scratch.mit.edu/users/evleong1/" target = "blank"  draggable="false"><i class="fa-solid fa-cat"></i></a>
+                        </div> -->
+                        
                     
-                    <div class="projButtons">
-                        <a href="https://scratch.mit.edu/users/evleong1/" target = "blank"  draggable="false"><i class="fa-solid fa-cat"></i></a>
                     </div>
                     
-                
+                </div>
+                <div class="row">
+                    
+                    <div class="miniProj2">
+                        <h3>Balancing AVL Trees</h3>
+                        <img src="images/schoolProjects/avltrees.png" draggable="false">
+                        
+                        <p>
+                            <b> Language</b> <br> 
+                            - C++ <br> <br>
+                            <b> Data Structures Used</b> <br> 
+                            - AVL Tree <br><br>
+                            <b>About The Project</b><br>
+                            - This program takes an unbalanced Binary Search Tree and uses rotations to balance the nodes creating a balanced AVL Tree
+
+                            
+                        
+                        </p>
+                        
+                        <!-- <div class="projButtons">
+                            <a href="https://scratch.mit.edu/users/evleong1/" target = "blank"  draggable="false"><i class="fa-solid fa-cat"></i></a>
+                        </div> -->
+                        
+                    
+                    </div>
+                    <div class="miniProj2">
+                        <h4>Before Rotations (Unbalanced)</h4>
+                        <img src="images/schoolProjects/preRotate.png" draggable="false">
+                        
+                        
+                        
+                        <!-- <div class="projButtons">
+                            <a href="https://scratch.mit.edu/users/evleong1/" target = "blank"  draggable="false"><i class="fa-solid fa-cat"></i></a>
+                        </div> -->
+                        
+                    
+                    </div>
+                    <div class="miniProj2">
+                        <h4>After Rotations (Balanced)</h4>
+                        <img src="images/schoolProjects/postRotate.png" draggable="false">
+                        
+                        
+                        
+                        <!-- <div class="projButtons">
+                            <a href="https://scratch.mit.edu/users/evleong1/" target = "blank"  draggable="false"><i class="fa-solid fa-cat"></i></a>
+                        </div> -->
+                        
+                    
+                    </div>
+                    
                 </div>
             <!-- </div> -->
         </div>
@@ -384,11 +520,11 @@
     </section>
 
    
-    <hr style="margin-top: 10%;">
 
 
     <!-----Contact------>
-    <section class="contactB">
+    <section class="contactB" style="background-color: rgb(29,32,58);">;
+
         <div class="contact" id="contactpg">
             <h1>Contact</h1>
             <div class="row">
@@ -528,21 +664,23 @@
 
 </script>
 
-
+<!-- JS FOR SCROLL BAR -->
 <!---JS for top buttom--->
 <script>
     //Get the button:
     mybutton = document.getElementById("topBtn");
 
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function() {
+        scrollFunction() 
+        myFunction()};
 
     function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
+        if (document.body.scrollTop > 700|| document.documentElement.scrollTop > 700) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
     }
 
     // When the user clicks on the button, scroll to the top of the document
@@ -550,7 +688,22 @@
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+
+
+
+
+    // When the user scrolls the page, execute myFunction
+    //window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+    }
+
 </script>
+
 
     
 </body>
