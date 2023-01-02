@@ -440,6 +440,29 @@ p{
 }
 
 
+.acr1 h4{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 100px;
+    font-size: 20px;
+    /* background: rgba(45, 133, 235, 0.9); */
+    padding: 20px;
+    border-radius: 60px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+}
+.acr1{
+    flex-basis: 30%;
+    
+}
+.acr1 img{
+    object-position: left;
+}
+
 .bBlock{
     flex-basis: 30%;
     background: rgba(45, 133, 235, 0.9);
@@ -820,7 +843,7 @@ h3{
     border-radius: 10px;
     height: 80%;
     width: 100%;
-    object-position: 10% 10%;
+    object-position: 0% 10%;
     object-fit:cover;
     transition: 0.2s;
     border: 3px white solid;
