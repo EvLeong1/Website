@@ -32,7 +32,9 @@
 }
 
 
-
+body{
+    background-color: rgba(29,32,58,255);
+}
 
 /* hr{
     border: 8px double maroon;
@@ -976,6 +978,7 @@ h3{
     margin-right: auto;
     width: 75%; 
     border: 2px solid white;
+    font-size: 20px;
 
 }
 
@@ -1119,7 +1122,7 @@ h3{
     width: 75%; 
     /* margin-bottom: 250px; */
     border: 2px solid white;
-    
+    margin-bottom: 50px;
 
 }
 
@@ -1137,6 +1140,7 @@ h3{
     margin-right: auto;
     width: 75%; 
     border: 2px solid white;
+    font-size: 20px;
 
 }
 
