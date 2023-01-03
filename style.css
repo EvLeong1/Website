@@ -441,7 +441,6 @@ p{
     flex-basis: 30%;
 }
 
-
 .acr1 h4{
     margin-top: 20px;
     margin-bottom: 15px;
@@ -464,6 +463,44 @@ p{
 .acr1 img{
     object-position: left;
 }
+
+.pok h4{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 100px;
+    font-size: 20px;
+    /* background: rgba(45, 133, 235, 0.9); */
+    padding: 20px;
+    border-radius: 60px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+}
+.pok{
+    flex-basis: 48%;
+    
+}
+.pok img{
+    object-fit: fill;
+    object-position: center;
+    
+}
+
+.pok video{
+    /* height: 30%; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+
 
 .bBlock{
     flex-basis: 30%;
@@ -741,7 +778,7 @@ h3{
     border-radius: 10px;
     height: 60%;
     width: 50%;
-    object-position:  top ;
+    object-position:   center;
     object-fit:cover;
     transition: 0.2s;
     border: 3px white solid;
@@ -752,7 +789,11 @@ h3{
     margin-top: 20px;
     margin-bottom: 20px;
 
+
 }
+
+
+
 
 .proj img:hover{
     box-shadow: 0 0 40px 0px white;
@@ -876,6 +917,85 @@ h3{
 
 }
 
+
+
+
+.proj3{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    
+    
+}
+
+
+.proj3 img:hover{
+    box-shadow: 0 0 40px 0px white;
+    transition: 0.2s;
+}
+
+
+.proj3 p{
+    padding: 0;
+    font-weight: 400;
+    color:white;
+    background: rgba(45, 133, 235, 0.9);
+    padding:10px;
+    border-radius: 20px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+    margin-top: 50px;
+    border: 2px solid white;
+    
+
+}
+
+
+
+.proj3 img{
+    width: 50%;
+    border-radius: 10px;
+    height: 80%;
+    width: 100%;
+    object-position: center;
+    object-fit:cover;
+    transition: 0.2s;
+    border: 3px white solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+      
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.proj3 h3{
+    margin-top: 150px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+    background: rgba(45, 133, 235, 0.9);
+    padding: 20px;
+    border-radius: 60px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+    font-size: 50px;
+    border: 2px solid white;
+
+}
+
+
+
+
+
 .acrpic h3{
     margin-top: 150px;
     margin-bottom: 15px;
@@ -990,14 +1110,21 @@ h3{
 } */
 
 @media(min-width:701px) and (max-width:1400px) {
+    .nav-links{
+        margin-top: 20px;
+    }
+
+
     .miniProj2{
         flex-basis: 45%;
         border-radius: 10px;
         margin-bottom: 10%;
         text-align: left;
-        margin-top: 150px;
+        margin-top: 200px;
         
     }
+    
+
     .proj2 p {
         flex-basis: 31%;
         border-radius: 10px;
